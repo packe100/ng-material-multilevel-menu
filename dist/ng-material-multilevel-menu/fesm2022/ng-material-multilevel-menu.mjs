@@ -1,7 +1,7 @@
 import * as i3 from '@angular/common';
 import { CommonModule } from '@angular/common';
 import * as i0 from '@angular/core';
-import { Component, Input, EventEmitter, Output, NgModule, ContentChild } from '@angular/core';
+import { Injectable, Component, Input, EventEmitter, Output, NgModule, ContentChild } from '@angular/core';
 import * as i1 from '@angular/router';
 import { NavigationEnd, RouterModule } from '@angular/router';
 import { trigger, state, style, transition, group, animate } from '@angular/animations';
@@ -158,7 +158,12 @@ class MultilevelMenuService {
         this.selectedMenuID.next(menuID);
         return this.foundLinkObject;
     }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService, deps: [], target: i0.ɵɵFactoryTarget.Injectable }); }
+    static { this.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService }); }
 }
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService, decorators: [{
+            type: Injectable
+        }] });
 
 class ListItemContentComponent {
     constructor() {
@@ -610,7 +615,7 @@ class NgMaterialMultilevelMenuModule {
             ListItemContentComponent], imports: [CommonModule,
             MaterialsModule,
             RouterModule], exports: [NgMaterialMultilevelMenuComponent] }); }
-    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: NgMaterialMultilevelMenuModule, imports: [CommonModule,
+    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: NgMaterialMultilevelMenuModule, providers: [MultilevelMenuService], imports: [CommonModule,
             MaterialsModule,
             RouterModule] }); }
 }
@@ -627,6 +632,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImpo
                         ListItemComponent,
                         ListItemContentComponent,
                     ],
+                    providers: [MultilevelMenuService],
                     exports: [NgMaterialMultilevelMenuComponent]
                 }]
         }] });

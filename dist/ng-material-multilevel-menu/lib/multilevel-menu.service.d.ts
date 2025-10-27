@@ -1,5 +1,6 @@
 import { Observable } from 'rxjs';
 import { MultilevelNode, ExpandCollapseStatusEnum } from './app.model';
+import * as i0 from "@angular/core";
 export declare class MultilevelMenuService {
     foundLinkObject: MultilevelNode;
     private expandCollapseStatus;
@@ -15,4 +16,6 @@ export declare class MultilevelMenuService {
     kvDummyComparerFn(): number;
     setMenuExpandCollapseStatus(status: ExpandCollapseStatusEnum): void;
     selectMenuByID(menuID: string): MultilevelNode;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MultilevelMenuService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<MultilevelMenuService>;
 }
