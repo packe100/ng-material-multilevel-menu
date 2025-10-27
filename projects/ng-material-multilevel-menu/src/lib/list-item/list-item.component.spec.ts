@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
+import { Router } from '@angular/router';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ListItemComponent } from './list-item.component';
+import { MultilevelMenuService } from '../multilevel-menu.service';
 
 describe('ListItemComponent', () => {
   let component: ListItemComponent;
@@ -8,7 +10,18 @@ describe('ListItemComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListItemComponent ]
+      declarations: [ ListItemComponent ],
+      imports: [ NoopAnimationsModule ],
+      providers: [
+        MultilevelMenuService,
+        {
+          provide: Router,
+          useValue: {
+            events: { subscribe: () => {} },
+            url: '/'
+          }
+        }
+      ]
     })
     .compileComponents();
   }));
@@ -16,6 +29,15 @@ describe('ListItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ListItemComponent);
     component = fixture.componentInstance;
+    // Initialize required inputs
+    component.node = {
+      label: 'Test',
+      items: []
+    };
+    component.nodeConfiguration = {
+      rtlLayout: false
+    };
+    component.nodeChildren = [];
     fixture.detectChanges();
   });
 

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
+import { Router } from '@angular/router';
 import { NgMaterialMultilevelMenuComponent } from './ng-material-multilevel-menu.component';
+import { MultilevelMenuService } from './multilevel-menu.service';
 
 describe('NgMaterialMultilevelMenuComponent', () => {
   let component: NgMaterialMultilevelMenuComponent;
@@ -8,7 +9,17 @@ describe('NgMaterialMultilevelMenuComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgMaterialMultilevelMenuComponent ]
+      declarations: [ NgMaterialMultilevelMenuComponent ],
+      providers: [
+        MultilevelMenuService,
+        {
+          provide: Router,
+          useValue: {
+            events: { subscribe: () => {} },
+            url: '/'
+          }
+        }
+      ]
     })
     .compileComponents();
   }));
@@ -16,6 +27,12 @@ describe('NgMaterialMultilevelMenuComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(NgMaterialMultilevelMenuComponent);
     component = fixture.componentInstance;
+    component.items = [];
+    component.configuration = {
+      paddingAtStart: true,
+      rtlLayout: false
+    };
+    component.ngOnChanges(); // Initialize subscriptions
     fixture.detectChanges();
   });
 

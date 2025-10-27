@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ListItemContentComponent } from './list-item-content.component';
 
 describe('ListItemContentComponent', () => {
@@ -8,7 +8,8 @@ describe('ListItemContentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListItemContentComponent ]
+      declarations: [ ListItemContentComponent ],
+      imports: [ NoopAnimationsModule ]
     })
     .compileComponents();
   });
@@ -16,6 +17,13 @@ describe('ListItemContentComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ListItemContentComponent);
     component = fixture.componentInstance;
+    // Initialize required inputs
+    component.node = {
+      label: 'Test',
+      externalRedirect: false
+    };
+    component.isRtlLayout = false;
+    component.nodeConfiguration = {};
     fixture.detectChanges();
   });
 
