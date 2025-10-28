@@ -6,7 +6,6 @@ import { ListItemComponent } from './list-item/list-item.component';
 import { MaterialsModule } from './materials.module';
 import { NgMaterialMultilevelMenuComponent } from './ng-material-multilevel-menu.component';
 import { ListItemContentComponent } from './list-item/list-item-content/list-item-content.component';
-import { MultilevelMenuService } from './multilevel-menu.service';
 
 @NgModule({
   imports: [
@@ -19,7 +18,6 @@ import { MultilevelMenuService } from './multilevel-menu.service';
     ListItemComponent,
     ListItemContentComponent,
   ],
-  providers: [MultilevelMenuService],
   exports: [NgMaterialMultilevelMenuComponent]
 })
 export class NgMaterialMultilevelMenuModule {}

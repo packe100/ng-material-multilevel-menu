@@ -159,10 +159,13 @@ class MultilevelMenuService {
         return this.foundLinkObject;
     }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService, deps: [], target: i0.ɵɵFactoryTarget.Injectable }); }
-    static { this.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService }); }
+    static { this.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService, providedIn: 'root' }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: MultilevelMenuService, decorators: [{
-            type: Injectable
+            type: Injectable,
+            args: [{
+                    providedIn: 'root'
+                }]
         }] });
 
 class ListItemContentComponent {
@@ -615,7 +618,7 @@ class NgMaterialMultilevelMenuModule {
             ListItemContentComponent], imports: [CommonModule,
             MaterialsModule,
             RouterModule], exports: [NgMaterialMultilevelMenuComponent] }); }
-    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: NgMaterialMultilevelMenuModule, providers: [MultilevelMenuService], imports: [CommonModule,
+    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: NgMaterialMultilevelMenuModule, imports: [CommonModule,
             MaterialsModule,
             RouterModule] }); }
 }
@@ -632,7 +635,6 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImpo
                         ListItemComponent,
                         ListItemContentComponent,
                     ],
-                    providers: [MultilevelMenuService],
                     exports: [NgMaterialMultilevelMenuComponent]
                 }]
         }] });

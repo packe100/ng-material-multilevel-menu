@@ -3,7 +3,9 @@ import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import { MultilevelNode, ExpandCollapseStatusEnum } from './app.model';
 import {CONSTANT} from './constants';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class MultilevelMenuService {
   foundLinkObject: MultilevelNode;
   private expandCollapseStatus: Subject<ExpandCollapseStatusEnum> = new Subject<ExpandCollapseStatusEnum>();
