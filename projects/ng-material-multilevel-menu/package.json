@@ -1,0 +1,30 @@
+{
+  "name": "ng-mat-multilevel-menu",
+  "version": "7.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/packe100/ng-material-multilevel-menu.git"
+  },
+  "keywords": [
+    "Angular",
+    "multilevel-list",
+    "material-list",
+    "ng-multilevel-list",
+    "angular-multilevel-list",
+    "ng-material-multilevel-menu"
+  ],
+  "author": "Max <packe100@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/packe100/ng-material-multilevel-menu/issues"
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/cdk": "^18.0.0",
+    "@angular/material": "^18.0.0"
+  }
+}

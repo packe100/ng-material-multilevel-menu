@@ -1,0 +1,64 @@
+{
+  "name": "ng-mat-multilevel-menu",
+  "version": "7.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/packe100/ng-material-multilevel-menu.git"
+  },
+  "keywords": [
+    "Angular",
+    "multilevel-list",
+    "material-list",
+    "ng-multilevel-list",
+    "angular-multilevel-list",
+    "ng-material-multilevel-menu"
+  ],
+  "author": "Shashank Tiwari <shashank@codershood.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShankyTiwari/ng-material-multilevel-menu/issues"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build_package": "ng build ng-material-multilevel-menu --configuration=production",
+    "test": "ng test",
+    "lint": "ng lint",
+    "lint-fix": "ng lint --fix",
+    "e2e": "ng e2e"
+  },
+  "homepage": "https://multilevel-menu-demo.web.app/",
+  "private": false,
+  "dependencies": {
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.0",
+    "zone.js": "~0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.21",
+    "@angular/animations": "^18.2.14",
+    "@angular/cdk": "^18.2.14",
+    "@angular/cli": "^18.2.0",
+    "@angular/common": "^18.2.14",
+    "@angular/compiler": "^18.2.14",
+    "@angular/compiler-cli": "^18.2.14",
+    "@angular/core": "^18.2.14",
+    "@angular/forms": "^18.2.14",
+    "@angular/language-service": "^18.2.0",
+    "@angular/material": "^18.2.14",
+    "@angular/platform-browser": "^18.2.14",
+    "@angular/platform-browser-dynamic": "^18.2.14",
+    "@angular/router": "^18.2.14",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^20.14.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.3",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.2.0",
+    "typescript": "~5.4.5"
+  }
+}
