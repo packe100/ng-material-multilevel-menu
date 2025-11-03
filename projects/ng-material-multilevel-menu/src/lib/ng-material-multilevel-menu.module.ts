@@ -12,12 +12,6 @@ import { ListItemContentComponent } from './list-item/list-item-content/list-ite
     CommonModule,
     MaterialsModule,
     RouterModule,
-  ],
-  declarations: [
-    NgMaterialMultilevelMenuComponent,
-    ListItemComponent,
-    ListItemContentComponent,
-  ],
-  exports: [NgMaterialMultilevelMenuComponent]
+  ]
 })
 export class NgMaterialMultilevelMenuModule {}

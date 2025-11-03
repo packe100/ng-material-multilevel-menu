@@ -1,6 +1,6 @@
 {
   "name": "ng-material-multilevel-menu-angular-project",
-  "version": "7.0.2",
+  "version": "7.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ShankyTiwari/ng-material-multilevel-menu.git"
@@ -33,23 +33,23 @@
   "dependencies": {
     "rxjs": "^7.8.1",
     "tslib": "^2.6.0",
-    "zone.js": "~0.14.10"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.0",
-    "@angular/animations": "^18.2.14",
-    "@angular/cdk": "^18.2.14",
-    "@angular/cli": "^18.2.0",
-    "@angular/common": "^18.2.14",
-    "@angular/compiler": "^18.2.14",
-    "@angular/compiler-cli": "^18.2.14",
-    "@angular/core": "^18.2.14",
-    "@angular/forms": "^18.2.14",
-    "@angular/language-service": "^18.2.0",
-    "@angular/material": "^18.2.14",
-    "@angular/platform-browser": "^18.2.14",
-    "@angular/platform-browser-dynamic": "^18.2.14",
-    "@angular/router": "^18.2.14",
+    "@angular-devkit/build-angular": "^19.2.0",
+    "@angular/animations": "^19.0.0",
+    "@angular/cdk": "^19.0.0",
+    "@angular/cli": "^19.0.0",
+    "@angular/common": "^19.0.0",
+    "@angular/compiler": "^19.0.0",
+    "@angular/compiler-cli": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/forms": "^19.0.0",
+    "@angular/language-service": "^19.0.0",
+    "@angular/material": "^19.0.0",
+    "@angular/platform-browser": "^19.0.0",
+    "@angular/platform-browser-dynamic": "^19.0.0",
+    "@angular/router": "^19.0.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.14.0",
     "jasmine-core": "~5.1.0",
@@ -58,7 +58,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ng-packagr": "^18.2.0",
-    "typescript": "~5.4.5"
+    "ng-packagr": "^19.0.0",
+    "typescript": "~5.5.0"
   }
 }
