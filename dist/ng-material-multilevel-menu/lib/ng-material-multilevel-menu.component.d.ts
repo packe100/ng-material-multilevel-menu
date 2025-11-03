@@ -34,5 +34,5 @@ export declare class NgMaterialMultilevelMenuComponent implements OnInit, OnChan
     selectedListItem(event: MultilevelNode): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgMaterialMultilevelMenuComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgMaterialMultilevelMenuComponent, "ng-material-multilevel-menu", never, { "items": { "alias": "items"; "required": false; }; "configuration": { "alias": "configuration"; "required": false; }; }, { "selectedItem": "selectedItem"; "selectedLabel": "selectedLabel"; "menuIsReady": "menuIsReady"; }, ["listTemplate"], never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NgMaterialMultilevelMenuComponent, "ng-material-multilevel-menu", never, { "items": { "alias": "items"; "required": false; }; "configuration": { "alias": "configuration"; "required": false; }; }, { "selectedItem": "selectedItem"; "selectedLabel": "selectedLabel"; "menuIsReady": "menuIsReady"; }, ["listTemplate"], never, true, never>;
 }

@@ -16,5 +16,5 @@ export declare class ListItemContentComponent implements OnInit {
     getSelectedImageIcon(): string;
     nodeExpandStatus(): string;
     static ɵfac: i0.ɵɵFactoryDeclaration<ListItemContentComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ListItemContentComponent, "ng-list-item-content", never, { "node": { "alias": "node"; "required": false; }; "isRtlLayout": { "alias": "isRtlLayout"; "required": false; }; "listContentStyle": { "alias": "listContentStyle"; "required": false; }; "nodeConfiguration": { "alias": "nodeConfiguration"; "required": false; }; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ListItemContentComponent, "ng-list-item-content", never, { "node": { "alias": "node"; "required": false; }; "isRtlLayout": { "alias": "isRtlLayout"; "required": false; }; "listContentStyle": { "alias": "listContentStyle"; "required": false; }; "nodeConfiguration": { "alias": "nodeConfiguration"; "required": false; }; }, {}, never, never, true, never>;
 }
