@@ -1,9 +1,9 @@
 {
-  "name": "ng-mat-multilevel-menu",
+  "name": "ng-material-multilevel-menu-angular-project",
   "version": "7.0.2",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/packe100/ng-material-multilevel-menu.git"
+    "url": "git+https://github.com/ShankyTiwari/ng-material-multilevel-menu.git"
   },
   "keywords": [
     "Angular",
@@ -36,7 +36,7 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.21",
+    "@angular-devkit/build-angular": "^18.2.0",
     "@angular/animations": "^18.2.14",
     "@angular/cdk": "^18.2.14",
     "@angular/cli": "^18.2.0",
