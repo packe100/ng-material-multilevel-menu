@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-on-select',
   templateUrl: './on-select.component.html',
-  styleUrls: ['./on-select.component.css']
+  styleUrls: ['./on-select.component.css'],
+  standalone: false
 })
 export class OnSelectComponent implements OnInit {
 

@@ -10,6 +10,7 @@ import {CommonUtils} from './common-utils';
   selector: 'ng-material-multilevel-menu',
   templateUrl: './ng-material-multilevel-menu.component.html',
   styleUrls: ['./ng-material-multilevel-menu.component.css'],
+  standalone: false
 })
 export class NgMaterialMultilevelMenuComponent implements OnInit, OnChanges, OnDestroy {
   @Input() items: MultilevelNode[];

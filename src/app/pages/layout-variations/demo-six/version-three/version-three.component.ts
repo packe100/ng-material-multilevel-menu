@@ -8,7 +8,8 @@ import { MultilevelNode, Configuration, SlideInOut, ExpandedLTR } from './../../
   animations: [
     SlideInOut,
     ExpandedLTR,
-  ]
+  ],
+  standalone: false
 })
 export class VersionThreeComponent implements OnInit {
   appitems: MultilevelNode[] = [

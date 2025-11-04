@@ -1,6 +1,6 @@
 {
   "name": "ng-mat-multilevel-menu",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/packe100/ng-material-multilevel-menu.git"
@@ -25,7 +25,8 @@
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0",
     "@angular/cdk": "^19.0.0",
-    "@angular/material": "^19.0.0"
+    "@angular/material": "^19.0.0",
+    "@angular/router": "^19.0.0"
   },
   "module": "fesm2022/ng-mat-multilevel-menu.mjs",
   "typings": "index.d.ts",

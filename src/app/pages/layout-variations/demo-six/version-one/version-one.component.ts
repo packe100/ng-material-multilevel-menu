@@ -6,7 +6,8 @@ import { MultilevelNode, Configuration, ExpandedRTL, ExpandedLTR } from './../..
   selector: 'app-version-one',
   templateUrl: './version-one.component.html',
   styleUrls: ['./version-one.component.css'],
-  animations: [ExpandedRTL, ExpandedLTR]
+  animations: [ExpandedRTL, ExpandedLTR],
+  standalone: false
 })
 export class VersionOneComponent implements OnInit {
   appitems: MultilevelNode[] = [

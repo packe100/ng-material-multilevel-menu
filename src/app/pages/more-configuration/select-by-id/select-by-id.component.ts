@@ -9,7 +9,8 @@ import {
 @Component({
   selector: 'app-select-by-id',
   templateUrl: './select-by-id.component.html',
-  styleUrls: ['./select-by-id.component.css']
+  styleUrls: ['./select-by-id.component.css'],
+  standalone: false
 })
 export class SelectByIdComponent implements OnInit {
   appitems: MultilevelNode[] = [

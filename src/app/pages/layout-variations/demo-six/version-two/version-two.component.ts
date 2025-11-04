@@ -17,7 +17,8 @@ import { MultilevelNode, Configuration, ExpandedRTL, ExpandedLTR } from './../..
       transition('no => yes', animate(200)),
       transition('yes => no', animate(200))
     ])
-  ]
+  ],
+  standalone: false
 })
 export class VersionTwoComponent implements OnInit {
   appitems: MultilevelNode[] = [

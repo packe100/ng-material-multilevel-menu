@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-demo-one',
   templateUrl: './demo-one.component.html',
-  styleUrls: ['./demo-one.component.css']
+  styleUrls: ['./demo-one.component.css'],
+  standalone: false
 })
 export class DemoOneComponent implements OnInit {
   appitems = [

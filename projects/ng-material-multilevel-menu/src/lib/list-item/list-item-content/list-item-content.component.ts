@@ -8,7 +8,8 @@ import {CONSTANT} from '../../constants';
   selector: 'ng-list-item-content',
   templateUrl: './list-item-content.component.html',
   styleUrls: ['./list-item-content.component.css'],
-  animations: [ExpandedLTR, ExpandedRTL]
+  animations: [ExpandedLTR, ExpandedRTL],
+  standalone: false
 })
 export class ListItemContentComponent implements OnInit {
   @Input() node: MultilevelNode;

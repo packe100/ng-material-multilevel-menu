@@ -11,7 +11,8 @@ import {CommonUtils} from '../common-utils';
   selector: 'ng-list-item',
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.css'],
-  animations: [SlideInOut]
+  animations: [SlideInOut],
+  standalone: false
 })
 export class ListItemComponent implements OnChanges, OnInit {
   @Input() node: MultilevelNode;

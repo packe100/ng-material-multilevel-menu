@@ -5,7 +5,8 @@ import { NavigationEnd, Router } from '@angular/router';
 @Component({
   selector: 'app-demo-six',
   templateUrl: './demo-six.component.html',
-  styleUrls: ['./demo-six.component.css']
+  styleUrls: ['./demo-six.component.css'],
+  standalone: false
 })
 export class DemoSixComponent implements OnInit {
   links = [{

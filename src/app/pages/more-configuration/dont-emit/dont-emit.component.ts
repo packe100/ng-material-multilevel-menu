@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-dont-emit',
   templateUrl: './dont-emit.component.html',
-  styleUrls: ['./dont-emit.component.css']
+  styleUrls: ['./dont-emit.component.css'],
+  standalone: false
 })
 export class DontEmitComponent implements OnInit {
 

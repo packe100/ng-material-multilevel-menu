@@ -5,7 +5,8 @@ import { MultilevelNode, MultilevelMenuService, ExpandedRTL, ExpandedLTR } from 
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [ExpandedRTL, ExpandedLTR]
+  animations: [ExpandedRTL, ExpandedLTR],
+  standalone: false
 })
 export class AppComponent implements OnInit {
   selectedData = null;

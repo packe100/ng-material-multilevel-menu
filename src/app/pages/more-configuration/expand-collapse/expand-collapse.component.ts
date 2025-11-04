@@ -6,6 +6,7 @@ import { MultilevelNode, MultilevelMenuService } from './../../../../../projects
   selector: 'app-expand-collapse',
   templateUrl: './expand-collapse.component.html',
   styleUrls: ['./expand-collapse.component.css'],
+  standalone: false
 })
 export class ExpandCollapseComponent implements OnInit {
   appitems: MultilevelNode[] = [

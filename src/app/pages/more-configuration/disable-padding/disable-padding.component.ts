@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-disable-padding',
   templateUrl: './disable-padding.component.html',
-  styleUrls: ['./disable-padding.component.css']
+  styleUrls: ['./disable-padding.component.css'],
+  standalone: false
 })
 export class DisablePaddingComponent implements OnInit {
   appitems = [
